@@ -1,0 +1,38 @@
+{
+  "name": "vogels-helpers",
+  "version": "0.0.1",
+  "description": "A nodejs helpers module for vogels",
+  "main": "./lib/index.js",
+  "scripts": {
+    "test": "./node_modules/mocha/bin/mocha -R spec",
+    "lint": "eslint .",
+    "docs": "jsdoc ./lib -d ./docs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Mitica/vogels-helpers.git"
+  },
+  "engines": [
+    "node >=4.0.0"
+  ],
+  "keywords": [
+    "vogels",
+    "helpers",
+    "dynamodb"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mitica/vogels-helpers/issues"
+  },
+  "homepage": "https://github.com/Mitica/vogels-helpers",
+  "dependencies": {
+    "bluebird": "^3.0.5",
+    "joi": "^7.0.0",
+    "lodash": "^3.10.1",
+    "memory-cache": "^0.1.4"
+  },
+  "devDependencies": {
+    "mocha": "^2.3.3"
+  }
+}
