@@ -1,6 +1,6 @@
 'use strict';
 
-var vogels = require('vogels');
+var vogels = require('../../lib');
 var Joi = require('joi');
 
 exports.Account = vogels.define('Account', {
@@ -30,6 +30,5 @@ exports.Account = vogels.define('Account', {
 		photo: Joi.string().trim().max(255),
 
 		customData: Joi.string().trim().max(800)
-	},
-	indexes: []
+	}
 });
