@@ -30,7 +30,6 @@
     "bluebird": "^3.0.5",
     "joi": "^7.0.0",
     "lodash": "^3.10.1",
-    "memory-cache": "^0.1.4",
     "vogels": "^2.0.0-rc10"
   },
   "devDependencies": {
