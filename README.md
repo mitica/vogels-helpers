@@ -34,7 +34,7 @@ Params:
 
 ### dynamo.control.create(model, data[, options]);
 
-Creates a new record. Returns a promise!
+Creates a new record. Returns a promise! Builds ConditionExpression if not set.
 
 Params:
 - **model** (String) - model name;
@@ -56,7 +56,7 @@ Params:
 
 ### dynamo.control.update(model, data[, options]);
 
-Updates an existing record. Returns a promise!
+Updates an existing record. Returns a promise! Builds ConditionExpression if not set.
 
 Params:
 - **model** (String) - model name;
@@ -64,3 +64,7 @@ Params:
 - **options** (Object) - access options:
   - **params** (Object) - DynamoDB params.
   - **format** (String) - result format: `json`, or `model` - default `model`.
+
+### dynamo.control.destroy(model, key[, options]);
+
+Destroy an item by key.

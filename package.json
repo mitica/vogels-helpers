@@ -1,6 +1,6 @@
 {
   "name": "vogels-helpers",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "A nodejs helpers module for vogels",
   "main": "./lib/index.js",
   "scripts": {
