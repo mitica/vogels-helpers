@@ -1,6 +1,6 @@
 {
   "name": "vogels-helpers",
-  "version": "0.1.6",
+  "version": "0.2.0",
   "description": "A nodejs helpers module for vogels",
   "main": "./lib/index.js",
   "scripts": {
@@ -28,9 +28,9 @@
   "homepage": "https://github.com/Mitica/vogels-helpers",
   "dependencies": {
     "bluebird": "^3.0.5",
-    "joi": "6.10.0",
-    "lodash": "^3.10.1",
-    "vogels": "^2.0.0-rc10"
+    "joi": "5.x.x",
+    "lodash": "4.x.x",
+    "vogels": "2.x.x"
   },
   "devDependencies": {
     "mocha": "^2.3.3"
