@@ -20,10 +20,10 @@ Gets an item by hash key. Returns a promise!
 
 Params:
 - **model** (String) - model name;
-- **key** (String|Number|Object) - hash key;
+- **key** (String|Number|Object) - record key;
 - **options** (Object) - access options:
   - **params** (Object) - DynamoDB params.
-  - **format** (String) - result format: `json`, or `model` - default `model`.
+  - **format** (String) - result format: `json`, `items`, `first`, or `model` - default `json`.
   
 ### dynamo.access.getItems(model, keys [, options]);
 
@@ -41,29 +41,29 @@ Params:
 - **data** (Object) - record data;
 - **options** (Object) - access options:
   - **params** (Object) - DynamoDB params.
-  - **format** (String) - result format: `json`, or `model` - default `model`.
+  - **format** (String) - result format: `json`, `items`, `first`, or `model` - default `json`.
 
 ### dynamo.control.put(model, data[, options]);
 
-Creates on replaces a record. Returns a promise!
+Create or replace a record. Returns a promise!
 
 Params:
 - **model** (String) - model name;
 - **data** (Object) - record data;
 - **options** (Object) - access options:
   - **params** (Object) - DynamoDB params.
-  - **format** (String) - result format: `json`, or `model` - default `model`.
+  - **format** (String) - result format: `json`, `items`, `first`, or `model` - default `json`.
 
 ### dynamo.control.update(model, data[, options]);
 
-Updates an existing record. Returns a promise! Builds ConditionExpression if not set.
+Update an existing record. Returns a promise! Builds ConditionExpression if not set.
 
 Params:
 - **model** (String) - model name;
 - **data** (Object) - record data;
 - **options** (Object) - access options:
   - **params** (Object) - DynamoDB params.
-  - **format** (String) - result format: `json`, or `model` - default `model`.
+  - **format** (String) - result format: `json`, `items`, `first`, or `model` - default `json`.
 
 ### dynamo.control.destroy(model, key[, options]);
 
